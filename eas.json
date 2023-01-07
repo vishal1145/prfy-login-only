@@ -1,0 +1,31 @@
+{
+  "cli": {
+    "version": ">= 2.1.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "cache": {
+        "key": "Invalidate"
+      },
+     "ios": {
+      "cocoapods": "1.11.2"
+    }
+    }
+  },
+  "submit": {
+    "production": {
+      "ios":{
+        "appleId":"YOUR APPLE ID",
+        "ascAppId":"YOUR ascAppId ID",
+        "appleTeamId":"YOUR appleTeamId ID"
+      }
+    }
+  }
+}

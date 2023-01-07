@@ -1,0 +1,65 @@
+{
+  "expo": {
+    "name": "PRfy",
+    "slug": "PRfy",
+    "version": "1.1.4",
+    "orientation": "portrait",
+    "icon": "./assets/iosLogo.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.app.prfy",
+      "buildNumber": "14"
+     
+    },
+    "android": {
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/androidLogo.png",
+        "backgroundColor": "#4F4469"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "package": "com.app.prfy",
+      "versionCode": 2
+    },
+    "plugins": [
+      "@react-native-google-signin/google-signin",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ]
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "aee7e635-7260-409e-ae8b-fa62e3508d4b"
+      }
+    },
+    "notification": {
+      "icon": "./assets/androidLogo.png",
+      "androidMode": "default",
+      "androidCollapsedTitle": "Updates from Colab.notes",
+      "iosDisplayInForeground": true
+    },
+    "scheme": "com.app.prfy"
+  }
+}
